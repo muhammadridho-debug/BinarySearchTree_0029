@@ -38,6 +38,11 @@ public:
         node *currentnode = NULL;
 
         search(element, parent, currentnode);
+
+        if (parent == NULL) {
+            root = newnode;
+            return;
+        }
     }
 
     // this function searches the current node of the specified node
