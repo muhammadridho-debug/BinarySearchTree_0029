@@ -130,10 +130,18 @@ int main()
         {
             case '1': 
             {
-                cout << "enter a word: ";
+                cout << "Enter a word: ";
                 string word;
                 cin >> word;
                 obj.insert(word);
+                break;
+            }
+            case '2': {
+                obj.inorder(obj.root);
+                break;
+            }
+            case '3': {
+                obj.preorder(obj.root);
                 break;
             }
             case '5':
