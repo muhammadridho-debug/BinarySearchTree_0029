@@ -27,6 +27,19 @@ public:
         root = NULL;
     }
 
+    void insert(string element) 
+    {
+        node *newnode = new node(element, NULL, NULL);
+        newnode->info = element;
+        newnode->leftchild = NULL;
+        newnode->rightchild = NULL;
+
+        node *parent = NULL;
+        node *currentnode = NULL;
+
+        search(element, parent, currentnode);
+    }
+
     // this function searches the current node of the specified node
     // as well as the current node of its parent
     void search(string element, node *&parent, node *&currentnode) {
