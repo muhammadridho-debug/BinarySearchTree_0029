@@ -108,6 +108,23 @@ public:
     }
 };
 
-int main() {
+int main() 
+{
+    binarytree obj;
+
+    while (true) 
+    {
+        cout << "\nNenu" << endl;
+        cout << "1. Implement insert operation" << endl;
+        cout << "2. Implement inorder traversal" << endl;
+        cout << "3. Implement preorder traversal" << endl;
+        cout << "4. Implement postorder traversal" << endl;
+        cout << "5. Exit" << endl;
+        cout << "\nEnter your choice: " << endl;
+
+        char ch;
+        cin >> ch;
+        cout << endl;
+    }
     return 0;
 }
