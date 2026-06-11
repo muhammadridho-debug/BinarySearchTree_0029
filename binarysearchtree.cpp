@@ -125,6 +125,17 @@ int main()
         char ch;
         cin >> ch;
         cout << endl;
+
+        switch (ch) 
+        {
+            case '5':
+                return 0;
+            default: 
+            {
+                cout << "invalid option" << endl;
+                break;
+            }
+        }
     }
     return 0;
 }
