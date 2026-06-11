@@ -2,7 +2,8 @@
 #include <string>
 using namespace std;
 
-class node {
+class node 
+{
 public:
     string info;
     node *leftchild;
@@ -13,6 +14,17 @@ public:
         info = i;
         leftchild = l;
         rightchild = r;
+    }
+};
+
+class binarytree 
+{
+public:
+    node *root;
+
+    binarytree() 
+    {
+        root = NULL;
     }
 };
 
