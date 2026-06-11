@@ -136,12 +136,19 @@ int main()
                 obj.insert(word);
                 break;
             }
-            case '2': {
+            case '2': 
+            {
                 obj.inorder(obj.root);
                 break;
             }
-            case '3': {
+            case '3': 
+            {
                 obj.preorder(obj.root);
+                break;
+            }
+            case '4': 
+            {
+                obj.postorder(obj.root);
                 break;
             }
             case '5':
